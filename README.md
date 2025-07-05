@@ -1,6 +1,6 @@
 # scoop-excalian [![Tests](https://github.com/excalian/scoop-excalian/actions/workflows/ci.yml/badge.svg)](https://github.com/excalian/scoop-excalian/actions/workflows/ci.yml) [![Excavator](https://github.com/excalian/scoop-excalian/actions/workflows/excavator.yml/badge.svg)](https://github.com/excalian/scoop-excalian/actions/workflows/excavator.yml)
 
-This is **Excalian's personal Scoop bucket** containing apps not found in the main Scoop buckets, including [Zen Browser](https://zen-browser.app) and other custom or personal applications.
+This is **Excalian's personal Scoop bucket** containing apps not found in the main Scoop buckets, including [Zen Browser](https://zen-browser.app) and other applications.
 
 ## Usage
 
