@@ -1,4 +1,4 @@
-# scoop-excalian [![Tests](https://github.com/excalian/scoop-excalian/actions/workflows/ci.yml/badge.svg)](https://github.com/excalian/scoop-excalian/actions/workflows/ci.yml) [![Excavator](https://github.com/excalian/scoop-excalian/actions/workflows/excavator.yml/badge.svg)](https://github.com/excalian/scoop-excalian/actions/workflows/excavator.yml)
+# scoop-excalian [![Tests](https://github.com/excalian/scoop/actions/workflows/ci.yml/badge.svg)](https://github.com/excalian/scoop/actions/workflows/ci.yml) [![Excavator](https://github.com/excalian/scoop/actions/workflows/excavator.yml/badge.svg)](https://github.com/excalian/scoop/actions/workflows/excavator.yml)
 
 This is **Excalian's personal Scoop bucket** containing apps not found in the main Scoop buckets, including [Zen Browser](https://zen-browser.app) and other applications.
 
@@ -6,7 +6,7 @@ This is **Excalian's personal Scoop bucket** containing apps not found in the ma
 
 Add this bucket to Scoop:
 ```pwsh
-scoop bucket add excalian https://github.com/Excalian/scoop-excalian
+scoop bucket add excalian https://github.com/Excalian/scoop
 ```
 Then install apps from this bucket, for example, to install Zen Browser:
 ```pwsh
