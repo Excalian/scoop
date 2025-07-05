@@ -39,6 +39,10 @@
             "zen.exe",
             "Zen Browser Profile Manager",
             "-P"
+        ],
+        [
+            "private_browsing.exe",
+            "Zen Browser Private Browsing"
         ]
     ],
     "persist": [
