@@ -1,0 +1,42 @@
+name: Auto Update Scoop Manifests
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # daily at 4 AM UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install Scoop
+        shell: powershell
+        run: |
+          iwr -useb get.scoop.sh | iex
+          scoop install git
+
+      - name: Update all manifests
+        shell: powershell
+        run: |
+          ./update-manifests.ps1
+
+      - name: Commit and push changes
+        if: success()
+        shell: powershell
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          $changes = git status --porcelain
+          if ($changes) {
+            git commit -m "Auto update manifests"
+            git push
+          } else {
+            Write-Output "No changes to commit"
+          }
