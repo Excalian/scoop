@@ -1,7 +1,7 @@
 {
     "version": "1.14.2b",
     "description": "An open-source, privacy-focused web browser",
-    "homepage": "https://zen-browser.app",
+    "homepage": "https://www.zen-browser.app",
     "license": "MPL-2.0",
     "notes": [
         "There is a scoop profile, which will be put in the scoop app directory.",
@@ -36,12 +36,12 @@
         ],
         [
             "zen.exe",
-            "Zen Browser Profile Manager",
+            "Profile Manager",
             "-P"
         ],
         [
             "private_browsing.exe",
-            "Zen Browser Private Browsing"
+            "Private Browsing"
         ]
     ],
     "persist": [
